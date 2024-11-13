@@ -7,11 +7,13 @@ int main(){
 	lower = 0;
 	upper = 250;
 	step= 20;
-    fahr = lower;
-    while(fahr < upper){
+    fahr = upper;
+    printf("Fahrenheight to Celsius conversion table\n");
+
+    while(fahr > lower){
         celsius = (5.0/9.0) * (fahr - 32.0);
         printf("Fahrenheight: %3.0f Celsius: %6.1f\n",fahr,celsius);
-        fahr = fahr + step;
+        fahr = fahr - step;
     }
 
 }
